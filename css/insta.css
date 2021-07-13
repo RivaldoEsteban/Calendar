@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  max-width: 1366px;
+  margin: auto;
+}
+
+.instagram-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.75rem;
+}
+
+img {
+  block-size: 100%;
+  inline-size: 100%;
+  aspect-ratio: 1/1;
+}
+.post {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+@media (max-width: 735px) {
+  .instagram-container {
+    gap: 3px;
+  }
+}

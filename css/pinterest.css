@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 200px 1166px 1fr;
+  grid-auto-rows: 300px;
+  grid-template-areas: ". header header ." ". phone . .";
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  background: rgb(226, 165, 165);
+  grid-area: header;
+}
+
+img {
+  grid-area: phone;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box {
+  grid-column: 1/ -1;
+  display: grid;
+  grid-template-columns: 1fr 200px 1166px 1fr;
+  grid-template-areas: ". . contentI .";
+  background: royalblue;
+  border: 2px solid black;
+}
+
+.child {
+  grid-area: contentI;
+  border: 1px solid red;
+  position: relative;
+  z-index: 10;
+}

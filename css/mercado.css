@@ -1,0 +1,55 @@
+body {
+  color: white;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid {
+  max-width: 1366px;
+  margin: auto;
+  grid-template-columns: repeat(12, 1fr);
+  display: grid;
+  grid-auto-rows: 250px;
+  gap: 0.5rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  flex: 1;
+}
+
+.item.small {
+  background: burlywood;
+  grid-column-end: span 2;
+}
+
+.item.small::after {
+  content: "small";
+}
+
+.item.medium {
+  background: royalblue;
+  grid-column-end: span 4;
+}
+
+.item.medium::after {
+  content: "medium";
+}
+.item.large {
+  background: purple;
+  grid-column-end: span 6;
+}
+
+.item.large:after {
+  content: "large";
+}
+
+img {
+  inline-size: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  flex: 1;
+}

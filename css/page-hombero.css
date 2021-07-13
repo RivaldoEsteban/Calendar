@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  background: #78bbcb;
+  block-size: 100vh;
+  inline-size: 100vw;
+  display: grid;
+  place-content: center;
+}
+
+.homero-website {
+  width: 700px;
+  border: 10px solid black;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 100px);
+  gap: 1rem;
+  place-items: center;
+  grid-template-areas: ". . . . . . " "tostadora . dios dios . gusano" ". . dios dios . ." "campana reloj dios dios  boca ." ". . dios dios . ." ". . . . . .";
+}
+
+.boca {
+  grid-area: boca;
+  border: 5px solid blue;
+}
+
+.campana {
+  border: 5px solid black;
+  grid-area: campana;
+}
+
+.dios {
+  border: 5px solid green;
+  grid-area: dios;
+  height: 100%;
+}
+
+.gusano {
+  border: 5px solid rgb(126, 8, 8);
+  grid-area: gusano;
+}
+
+.reloj {
+  border: 5px solid yellow;
+  grid-area: reloj;
+}
+
+.tostadora {
+  border: 5px solid purple;
+  grid-area: tostadora;
+}
+
+img {
+  object-fit: cover;
+  max-inline-size: 100%;
+  box-sizing: border-box;
+}
