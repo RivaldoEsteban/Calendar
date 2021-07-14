@@ -1,0 +1,20 @@
+.calendarStatus {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.calendarStatus-date {
+  font: var(--subtitle-subtitle1);
+}
+
+.calendarStatus-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.calendarStatus-left {
+  display: flex;
+  align-items: center;
+}

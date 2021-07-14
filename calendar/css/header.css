@@ -1,1 +1,11 @@
 @import "./button.css";
+@import "./calendar-status.css";
+@import "./select.css";
+@import "./calendar-user.css";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}

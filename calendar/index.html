@@ -13,7 +13,41 @@
 <body>
   <div class="page">
     <header class="header">
-      <button class="button">
+      <div class="calendarStatus">
+       <div class="calendarStatus-left">
+        <button class="button is-compact">
+          <i class="icon-hamburguerButton"></i>
+        </button>
+        <a href="./index.html" aria-current="page" aria-label="calendar" tabindex="-1">
+          <img src="./images/logo.png" alt="logo">
+        </a>
+       </div>
+       <div class="calendarStatus-right">
+         <button class="button is-secondary">Hoy</button>
+         <span class="calendarStatus-navigation">
+           <button  class="button is-compact" aria-label="semana anterior">
+             <i class="icon-chevronLeft" aria-hidden="true"></i>
+           </button>
+           <button class="button is-compact" aria-colspan="semana siguiente">
+             <i class="icon-chevronRight" aria-hidden="true"></i>
+           </button>
+         </span>
+         <time class="calendarStatus-date" datetime="14/07/2021">14 de Julio de 2021</time>
+       </div>
+      </div>
+      <div class="calendarUser">
+        <select name="select mode" id="select-mode" class="select-mode">
+          <option value="" selected>Mes</option>
+          <option value="">Día</option>
+        </select>
+        <img src="./images/user.png" alt="imagen del usuario  ">
+      </div>
+
+
+
+
+
+      <!-- <button class="button">
         <span>
           button
         </span>
@@ -40,7 +74,7 @@
 
       <a class="button is-compact" href="#">
         <i class="icon-plus"></i>
-      </a>
+      </a> -->
     </header>
     <div class="sidebar"></div>
     <main class="calendar">

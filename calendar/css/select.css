@@ -1,0 +1,10 @@
+.select-mode {
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--gray20);
+  font: var(--button-button);
+  appearance: none;
+  background-image: url("../icons/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
