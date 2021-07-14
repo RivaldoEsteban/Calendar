@@ -1,0 +1,65 @@
+.button {
+  border: 1px solid transparent;
+  background: transparent;
+  padding: 12px 1rem;
+  font: var(--button-button);
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: currentColor;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.button.is-primary {
+  background: var(--blue10);
+  color: white;
+}
+.button.is-secondary {
+  border: 1px solid var(--gray20);
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+.button.button.is-primary:hover,
+.button.button.is-primary:focus {
+  background: var(--blue30);
+}
+.button:hover,
+.button:focus,
+.button.is-secondary:hover,
+.button.is-secondary:focus,
+.button.is-rounded:focus,
+.button.is-secondary:hover,
+.button-is-compact:hover,
+.button.is-compact:focus {
+  background: var(--gray10);
+}
+
+.button.is-rounded {
+  border-radius: 1.25rem;
+  color: var(--blue10);
+  background: white;
+}
+
+.button.is-compact {
+  background: white;
+  border-radius: 50%;
+  padding: 10px 8px;
+}
+
+.button i {
+  font-size: 1.5rem;
+  color: var(--gray50);
+}
+
+.button i,
+.button span {
+  vertical-align: middle;
+}
+
+.button.is-shadowed {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

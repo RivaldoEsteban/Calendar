@@ -1,0 +1,23 @@
+.page {
+  display: grid;
+  border: 1px solid red;
+  grid-template-rows: 6rem auto;
+  grid-template-columns: 16.25rem 1fr;
+  grid-template-areas: "header header" "sidebar calendar";
+  block-size: 100vh;
+}
+
+.page .header {
+  grid-area: header;
+  border: 1px solid red;
+}
+
+.page .sidebar {
+  grid-area: sidebar;
+  border: 1px solid blue;
+}
+
+.page .calendar {
+  grid-area: calendar;
+  border: 1px solid rgb(78, 78, 8);
+}
