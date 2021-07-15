@@ -2,6 +2,10 @@
 @import "./page.css";
 @import "./calendar.css";
 @import "./header.css";
+@import "./sidebar.css";
+@import "./modal.css";
+@import "./input.css";
+@import "./create-task.css";
 
 :root {
   --white: #fffffe;
@@ -27,4 +31,14 @@
 body {
   margin: 0;
   font: var(--body1-regular);
+  color: var(--gray50);
+  background: var(--white);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gray50: var(--white);
+    --white: var(var(--gray50));
+    --gray20: #c1c1c1;
+  }
 }

@@ -14,26 +14,26 @@
   <div class="page">
     <header class="header">
       <div class="calendarStatus">
-       <div class="calendarStatus-left">
+        <div class="calendarStatus-left">
         <button class="button is-compact">
           <i class="icon-hamburguerButton"></i>
         </button>
         <a href="./index.html" aria-current="page" aria-label="calendar" tabindex="-1">
           <img src="./images/logo.png" alt="logo">
         </a>
-       </div>
-       <div class="calendarStatus-right">
-         <button class="button is-secondary">Hoy</button>
-         <span class="calendarStatus-navigation">
-           <button  class="button is-compact" aria-label="semana anterior">
-             <i class="icon-chevronLeft" aria-hidden="true"></i>
-           </button>
-           <button class="button is-compact" aria-colspan="semana siguiente">
-             <i class="icon-chevronRight" aria-hidden="true"></i>
-           </button>
-         </span>
-         <time class="calendarStatus-date" datetime="14/07/2021">14 de Julio de 2021</time>
-       </div>
+        </div>
+        <div class="calendarStatus-right">
+          <button class="button is-secondary">Hoy</button>
+          <span class="calendarStatus-navigation">
+            <button  class="button is-compact" aria-label="semana anterior">
+              <i class="icon-chevronLeft" aria-hidden="true"></i>
+            </button>
+            <button class="button is-compact" aria-colspan="semana siguiente">
+              <i class="icon-chevronRight" aria-hidden="true"></i>
+            </button>
+          </span>
+          <time class="calendarStatus-date" datetime="14/07/2021">14 de Julio de 2021</time>
+        </div>
       </div>
       <div class="calendarUser">
         <select name="select mode" id="select-mode" class="select-mode">
@@ -42,43 +42,106 @@
         </select>
         <img src="./images/user.png" alt="imagen del usuario  ">
       </div>
-
-
-
-
-
-      <!-- <button class="button">
+    </header>
+    <section class="sidebar" aria-label="sidebar">
+      <button class="button is-rounded is-shadowed">
+        <i class="icon-plus" aria-hidden="true"></i>
         <span>
-          button
+          Crear
         </span>
       </button>
-
-
-      <a class="button is-primary" href="#">
-        <span>
-          button
-        </span>
-      </a>
-      <a class="button is-secondary" href="#">
-        <span>
-          button
-        </span>
-      </a>
-
-      <a class="button is-rounded is-shadowed" href="#">
-        <i class="icon-plus"></i>
-        <span>
-          button
-        </span>
-      </a>
-
-      <a class="button is-compact" href="#">
-        <i class="icon-plus"></i>
-      </a> -->
-    </header>
-    <div class="sidebar"></div>
+      <div class="miniCalendar" aria-label="calendario de navegación">
+        <div >
+          <div class="miniCalendar-date">
+            <p>Julio 2021</p>
+            <div class="miniCalendar-buttons">
+              <button class="button is-compact" aria-label="semana anterior">
+                <i class="icon-chevronLeft" aria-hidden="true"></i>
+              </button>
+              <button class="button is-compact" aria-colspan="semana siguiente">
+                <i class="icon-chevronRight" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="miniCalendar-grid">
+            <p class="calendar-day">D</p>
+            <p class="calendar-day">L</p>
+            <p class="calendar-day">M</p>
+            <p class="calendar-day">M</p>
+            <p class="calendar-day">J</p>
+            <p class="calendar-day">V</p>
+            <p class="calendar-day">S</p>
+            <p class="day-opacity">28</p>
+            <p class="day-opacity">29</p>
+            <p class="day-opacity">30</p>
+            <p class="day-opacity">31</p>
+            <p class="calendar-day">1</p>
+            <p class="calendar-day">2</p>
+            <p class="calendar-day">3</p>
+            <p class="calendar-day">4</p>
+            <p class="calendar-day">5</p>
+            <p class="calendar-day">6</p>
+            <p class="calendar-day">7</p>
+            <p class="calendar-day">8</p>
+            <p class="calendar-day">9</p>
+            <p class="calendar-day">10</p>
+            <p class="calendar-day">11</p>
+            <p class="calendar-day">12</p>
+            <p class="calendar-day">13</p>
+            <p class="calendar-day">14</p>
+            <p class="calendar-day">15</p>
+            <p class="calendar-day">16</p>
+            <p class="calendar-day">17</p>
+            <p class="calendar-day">18</p>
+            <p class="calendar-day">19</p>
+            <p class="calendar-day">20</p>
+            <p class="calendar-day">21</p>
+            <p class="calendar-day">22</p>
+            <p class="calendar-day">23</p>
+            <p class="calendar-day">24</p>
+            <p class="calendar-day">25</p>
+            <p class="calendar-day">26</p>
+            <p class="calendar-day">27</p>
+            <p class="calendar-day">28</p>
+            <p class="calendar-day is-active">29</p>
+            <p class="calendar-day">30</p>
+            <p class="day-opacity">1</p>
+            <p class="day-opacity">2</p>
+            <p class="day-opacity">3</p>
+            <p class="day-opacity">4</p>
+            <p class="day-opacity">5</p>
+            <p class="day-opacity">6</p>
+            <p class="day-opacity">7</p>
+            <p class="day-opacity">8</p>
+          </div>
+        </div>
+        <div class="miniCalendar-calendar"></div>
+      </div>
+      <div class="search">
+        <i class="icon-users"></i>
+        <input type="text" placeholder="Buscar Personas">
+      </div>
+      <div  class="contact">
+        <div class="contact-title">
+          <p>Mis calendarios</p>
+          <i class="icon-chevronUp"></i>
+        </div>
+        <div class="contact-userName">
+          <i class="icon-checkSquare"></i>
+          <p>Rivaldo</p>
+        </div>
+        <div class="contact-userName">
+          <i class="icon-checkSquare"></i>
+          <p>Rivaldo</p>
+        </div>
+        <div class="contact-userName">
+          <i class="icon-checkSquare"></i>
+          <p>Rivaldo</p>
+        </div>
+      </div>
+    </section>
     <main class="calendar">
-      <div class="current-time"></div>
+      <div class="currentTime"></div>
       <div class="calendar-week">
         <div class="timezoneCell">GMT-5</div>
         <h2 class="calendarDay">
@@ -836,5 +899,65 @@
       </div>
     </main>
   </div>
+  <dialog  class="modal" id="modal" >
+    <form class="createTask">
+      <div class="input is-outstanding">
+        <div class="input-body">
+
+          <input type="text" name="title" placeholder="Añade un título" required>
+        </div>
+      </div>
+
+      <div class="input">
+        <div class="input-body">
+          <i class="icon-clock"></i>
+          <input type="date" name="date" required>
+          <input type="time" name="time-start" required>
+          <input type="time" name="time-end" required>
+        </div>
+      </div>
+
+
+      <div class="input">
+        <i class="icon-users"></i>
+        <div class="input-body">
+          <input type="text" list="guests" name="guests" placeholder="Agregar invitados" required>
+          <datalist id="guests">
+            <option value="rivaldo"></option>
+            <option value="fabio"></option>
+          </datalist>
+
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-gps"></i>
+        <div class="input-body">
+          <input type="text"  name="location" placeholder="Agregar invitación">
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-text"></i>
+        <div class="input-body">
+          <input type="file" multiple>
+        </div>
+      </div>
+
+      <div class="input">
+        <i class="icon-text"></i>
+        <div class="input-body">
+          <textarea name="description" placeholder="Agregar descriptición" id="" cols="30" rows="2"></textarea>
+        </div>
+      </div>
+    </form>
+    <div class="modal-actions">
+      <button class="button" id="close-modal">
+        cancelar
+      </button>
+      <button class="button is-primary">
+        Guardar
+      </button>
+    </div>
+  </dialog>
+  <script src="./javascript/app.js" type="module"></script>
 </body>
 </html>

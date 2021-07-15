@@ -1,0 +1,99 @@
+@import "./contact.css";
+.sidebar {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.sidebar button {
+  gap: 0.25rem;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.miniCalendar {
+  width: 100%;
+}
+
+.miniCalendar-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0 0;
+}
+
+.miniCalendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 30px;
+}
+
+.calendar-day {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font: var(--body3-regular);
+  color: var(--gray30);
+  cursor: pointer;
+}
+.calendar-day:hover {
+}
+.calendar-day:active {
+  border-radius: 50%;
+  transform: scale(0.9);
+  background: var(--blue10);
+  color: white;
+}
+
+.calendar-day.is-active {
+  border-radius: 50%;
+  transform: scale(0.9);
+  background: var(--blue10);
+  color: white;
+}
+
+.day-opacity {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #70757a;
+  font: var(--body3-regular);
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--gray10);
+  border-radius: 0.25rem;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  position: relative;
+  width: 100%;
+}
+
+.search input {
+  padding: 10px 1rem 10px 2.2rem;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+}
+
+.search i {
+  position: absolute;
+  left: 5px;
+  margin: 0 10px;
+}
+
+.my-calendar {
+  width: 100%;
+  border: 1px solid red;
+}

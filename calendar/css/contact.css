@@ -1,0 +1,39 @@
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-title {
+  font: 500 normal 14px/20px Roboto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.contact-title i {
+  font-size: 1.5rem;
+}
+.contact-title p {
+  margin: 0;
+  color: var(--gray30);
+}
+
+.contact-userName {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+  font-size: 14px;
+}
+
+.contact-userName p {
+  margin: 0;
+  color: var(--gray30);
+}
+.contact-userName i {
+  margin: 0;
+  font-size: 1.5rem;
+}

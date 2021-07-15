@@ -1,4 +1,4 @@
-.current-time {
+.currentTime {
   border: 1px solid red;
   block-size: 2px;
   background: var(--red10);
@@ -9,7 +9,7 @@
   z-index: 2;
 }
 
-.current-time::before {
+.currentTime::before {
   content: "";
   height: 1rem;
   width: 1rem;
