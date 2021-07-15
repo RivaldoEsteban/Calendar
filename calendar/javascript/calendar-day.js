@@ -4,15 +4,16 @@ function setCurrentTimePosition() {
   const currentHour = currentDate.getHours();
   const currentMin = currentDate.getMinutes();
 
-  const $currentTime = document.querySelector(".currentTime");
+  const currentTime = document.getElementById("currentTime");
 
-  const $calendar = document.querySelector(".calendar-week");
+  const calendar = document.querySelector(".calendar-by-day");
+  console.log(calendar);
 
-  let calendarBlockSize = $calendar.clientHeight;
-  let calendarInlineSize = $calendar.clientWidth;
+  // let calendarBlockSize = $calendar.clientHeight;
+  // let calendarInlineSize = $calendar.clientWidth;
 
-  // let calendarBlockSize = calendar.clientHeight;
-  // let calendarInlineSize = calendar.clientWidth;
+  let calendarBlockSize = calendar.clientHeight;
+  let calendarInlineSize = calendar.clientWidth;
 
   const calendarTimezoneCellInlineSize =
     document.querySelector(".timezoneCell").clientWidth;
@@ -28,19 +29,19 @@ function setCurrentTimePosition() {
   const cellBlockSize = calendarBlockSize / 24;
   // console.log({ cellBlockSize }, { cellInlineSize })
 
-  $currentTime.style.top = `${
+  currentTime.style.top = `${
     cellBlockSize * currentHour +
     calendarDayBlockSize +
     (cellBlockSize / 60) * currentMin
   }px`;
-  $currentTime.style.left = `${
-    cellInlineSize * currentDay + calendarTimezoneCellInlineSize + 24
-  }px`;
+  // currentTime.style.left = `${
+  //   cellInlineSize * currentDay + calendarTimezoneCellInlineSize + 24
+  // }px`;
 }
 
 window.intervalCurrentTimePosition = null;
 
-function intervalCurrentTimePosition(interval = 1000) {
+function intervalCurrentTimePositionDay(interval = 1000) {
   clearInterval(window.intervalCurrentTimePosition);
   setCurrentTimePosition();
   window.intervalCurrentTimePosition = setInterval(
@@ -49,4 +50,4 @@ function intervalCurrentTimePosition(interval = 1000) {
   );
 }
 
-export { setCurrentTimePosition, intervalCurrentTimePosition };
+export { setCurrentTimePosition, intervalCurrentTimePositionDay };
