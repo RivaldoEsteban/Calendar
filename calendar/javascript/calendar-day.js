@@ -34,9 +34,6 @@ function setCurrentTimePosition() {
     calendarDayBlockSize +
     (cellBlockSize / 60) * currentMin
   }px`;
-  // currentTime.style.left = `${
-  //   cellInlineSize * currentDay + calendarTimezoneCellInlineSize + 24
-  // }px`;
 }
 
 window.intervalCurrentTimePosition = null;
