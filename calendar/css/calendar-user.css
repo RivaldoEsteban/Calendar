@@ -3,3 +3,9 @@
   align-items: center;
   gap: 3rem;
 }
+
+.calendarUser img {
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+}
