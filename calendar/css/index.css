@@ -37,9 +37,50 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  /* :root {
     --gray50: var(--white);
-    --white: var(var(--gray50));
+    --white: var(--gray50);
     --gray20: #c1c1c1;
+  } */
+  body {
+    background: var(--gray30);
+    color: white;
+  }
+  .timezoneCell {
+    background: var(--gray30);
+    color: white;
+  }
+  .calendarDay {
+    background: var(--gray30);
+    color: white;
+  }
+  .contact-userName p {
+    color: white;
+  }
+  .search i {
+    color: black;
+  }
+  .contact-title p {
+    color: white;
+  }
+  .taskCell {
+    border-bottom: 1px solid white;
+    border-block-end: 1px solid white;
+    border-inline-start: 1px solid white;
+  }
+  .calendar-day {
+    color: white;
+  }
+  .hourCell {
+    color: white;
+  }
+  .button.is-secondary {
+    border: 1px solid white;
+  }
+  .button.is-compact {
+    background: var(--gray30);
+  }
+  .button.is-compact i {
+    color: white;
   }
 }
